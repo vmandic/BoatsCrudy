@@ -178,9 +178,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BoatOwnersController.cs" />
     <Compile Include="Controllers\BoatsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TripsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -191,6 +193,18 @@
     <Compile Include="Migrations\201705262040041_DbTablesAdded.cs" />
     <Compile Include="Migrations\201705262040041_DbTablesAdded.Designer.cs">
       <DependentUpon>201705262040041_DbTablesAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705272034456_m3.cs" />
+    <Compile Include="Migrations\201705272034456_m3.Designer.cs">
+      <DependentUpon>201705272034456_m3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705272039162_m4.cs" />
+    <Compile Include="Migrations\201705272039162_m4.Designer.cs">
+      <DependentUpon>201705272039162_m4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705272107443_m5.cs" />
+    <Compile Include="Migrations\201705272107443_m5.Designer.cs">
+      <DependentUpon>201705272107443_m5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -320,6 +334,18 @@
     <Content Include="Views\Boats\Details.cshtml" />
     <Content Include="Views\Boats\Edit.cshtml" />
     <Content Include="Views\Boats\Index.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\NumberShort.cshtml" />
+    <Content Include="Views\BoatOwners\Create.cshtml" />
+    <Content Include="Views\BoatOwners\Delete.cshtml" />
+    <Content Include="Views\BoatOwners\Details.cshtml" />
+    <Content Include="Views\BoatOwners\Edit.cshtml" />
+    <Content Include="Views\BoatOwners\Index.cshtml" />
+    <Content Include="Views\Trips\Create.cshtml" />
+    <Content Include="Views\Trips\Delete.cshtml" />
+    <Content Include="Views\Trips\Details.cshtml" />
+    <Content Include="Views\Trips\Edit.cshtml" />
+    <Content Include="Views\Trips\Index.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\File.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -333,6 +359,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705262040041_DbTablesAdded.resx">
       <DependentUpon>201705262040041_DbTablesAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705272034456_m3.resx">
+      <DependentUpon>201705272034456_m3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705272039162_m4.resx">
+      <DependentUpon>201705272039162_m4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705272107443_m5.resx">
+      <DependentUpon>201705272107443_m5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

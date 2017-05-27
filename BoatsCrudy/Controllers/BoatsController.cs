@@ -43,7 +43,7 @@ namespace BoatsCrudy.Controllers
     public ActionResult Create()
     {
       ViewBag.BoatOwnerId = new SelectList(Db.BoatOwners, "Id", "Firstname");
-      return View();
+      return View(new Boat());
     }
 
     // POST: Boats/Create
